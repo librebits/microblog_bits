@@ -5,4 +5,16 @@ from app import app
 @app.route('/index')
 def index():
     user = {'username': 'Fenix'}
-    return render_template ('index.html', title='Home', user=user)
+    return '''
+    <html>
+        <head>
+            <title>Home Page ~  Microblog</title>
+        </head>
+
+        <body>
+        </body>
+
+    
+    
+    </html>
+    '''

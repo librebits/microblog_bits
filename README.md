@@ -1,8 +1,6 @@
-
+# Flask Mega Tutorial - Microblog 
 
 https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
-
-
 
 For your reference, here is the complete list of articles in this series:
 
@@ -29,3 +27,85 @@ For your reference, here is the complete list of articles in this series:
 -   [Chapter 21: User Notifications](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xxi-user-notifications)
 -   [Chapter 22: Background Jobs](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xxii-background-jobs)
 -   [Chapter 23: Application Programming Interfaces (APIs)](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xxiii-application-programming-interfaces-apis)
+
+
+
+Welcome! You are about to start on a journey to learn how to create web applications with Python and the Flask framework. In this first
+chapter, you are going to learn how to set up a Flask project. By the end of this chapter you are going to have a simple Flask web
+application running on your computer!
+
+All the code examples presented in this book are hosted on a GitHub repository. Downloading the code from GitHub can save you a lot
+of typing, but I strongly recommend that you type the code yourself, at least for the first few chapters. Once you become more familiar
+with Flask and the example application you can access the code directly from GitHub if the typing becomes too tedious.
+
+At the beginning of each chapter, I'm going to give you three GitHub links that can be useful while you work through the chapter. The
+Browse link will open the GitHub repository for Microblog at the place where the changes for the chapter you are reading were added,
+without including any changes introduced in future chapters. The Zip link is a download link for a zip file including the entire application
+up to and including the changes in the chapter. The Diff link will open a graphical view of all the changes that were made in the
+chapter you are about to read.
+
+The GitHub links for this chapter are: [Browse](https://github.com/miguelgrinberg/microblog/tree/v0.1), [Zip](https://github.com/miguelgrinberg/microblog/archive/v0.1.zip), [Diff](https://github.com/miguelgrinberg/microblog/compare/v0.0...v0.1).
+
+
+## Python Virtual Environments
+
+Support for virtual environments is included in all recent versions of Python, so all you need to do to create one is this:
+
+$ python3 -m venv venv
+
+With this command, I'm asking Python to run the venv package, which creates a virtual environment named venv. The first venv in the
+command is an argument to the -m option which is the name of the Python virtual environment package, and the second is the virtual
+environment name that I'm going to use for this particular environment. If you find this confusing, you can replace the second venv with
+a different name that you want to assign to your virtual environment. In general, I create my virtual environments with the name venv
+in the project directory, so whenever I cd into a project I find its corresponding virtual environment.
+
+Note that in some operating systems you may need to use python instead of python3 in the command above. Some installations use
+python for Python 2.x releases and python3 for the 3.x releases, while others map python to the 3.x releases and do not have a python3
+command at all.
+
+After the command completes, you are going to have a directory named venv where the virtual environment files are stored.
+
+Now you have to tell the system that you want to use this virtual environment, and you do that by activating it. To activate your brand
+new virtual environment you use the following command:
+
+```
+$ source venv/bin/activate
+(venv) $ _
+```
+
+If you are using a Microsoft Windows command prompt window, the activation command is slightly different:
+
+```
+$ venv\Scripts\activate
+(venv) $ _
+```
+
+If you are on Windows but are using PowerShell instead of the command prompt, then there is yet another activation command you
+should use:
+
+```
+$ venv\Scripts\Activate.ps1
+(venv) $ _
+```
+
+When you activate a virtual environment, the configuration of your terminal session is modified so that the Python interpreter stored
+inside it is the one that is invoked when you type python. Also, the terminal prompt is modified to include the name of the activated
+virtual environment. The changes made to your terminal session are all temporary and private to that session, so they will not persist
+when you close the terminal window. If you work with multiple terminal windows open at the same time, it is perfectly fine to have
+different virtual environments activated on each one.
+
+Now that you have a virtual environment created and activated, you can finally install Flask in it:
+
+```
+(venv) $ pip install flask
+```
+
+If you want to confirm that your virtual environment now has Flask installed, you can start the Python interpreter and import Flask into
+it:
+
+```
+>>> import flask
+>>> _
+```
+
+If this statement does not give you any errors you can congratulate yourself, as Flask is installed and ready to be used.
