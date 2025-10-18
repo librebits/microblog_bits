@@ -109,3 +109,42 @@ it:
 ```
 
 If this statement does not give you any errors you can congratulate yourself, as Flask is installed and ready to be used.
+
+## Running Flask in Development Mode
+
+### Basic execution
+```bash
+# Activate virtual environment
+source venv/bin/activate
+
+# Set Flask application entry point (if .flaskenv is not configured)
+export FLASK_APP=microblog.py
+
+# Run Flask development server
+flask run
+```
+
+### Debug mode (recommended for development)
+
+Debug mode enables:
+- Auto-reload on code changes
+- Interactive debugger on errors
+- More detailed error messages
+
+```bash
+# Activate virtual environment
+source venv/bin/activate
+
+# Run Flask with debug mode enabled
+flask run --debug
+```
+
+**Important**: When Flask runs without debug mode, code changes require manual server restart. Always use `--debug` flag during development for automatic reload.
+
+### Common issue: Empty page in browser
+
+If you see an empty page when accessing http://127.0.0.1:5000, check:
+
+1. **Using render_template**: Make sure routes return `render_template()` instead of hardcoded HTML
+2. **Debug mode enabled**: Run with `flask run --debug` to see changes immediately
+3. **Template exists**: Verify the template file exists in `app/templates/`
