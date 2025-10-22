@@ -148,3 +148,59 @@ If you see an empty page when accessing http://127.0.0.1:5000, check:
 1. **Using render_template**: Make sure routes return `render_template()` instead of hardcoded HTML
 2. **Debug mode enabled**: Run with `flask run --debug` to see changes immediately
 3. **Template exists**: Verify the template file exists in `app/templates/`
+
+## Testing
+
+This project includes comprehensive unit tests for all components using Python's `unittest` framework, compatible with `pytest`.
+
+### Test Structure
+
+```
+tests/
+├── __init__.py
+├── test_config.py    # Tests for Config class
+├── test_app.py       # Tests for Flask app setup
+├── test_forms.py     # Tests for LoginForm validation
+└── test_routes.py    # Tests for all routes
+```
+
+### Running Tests
+
+Install test dependencies:
+```bash
+pip install pytest pytest-cov
+```
+
+Or install from requirements.txt:
+```bash
+pip install -r requirements.txt
+```
+
+Run all tests:
+```bash
+pytest
+```
+
+Run with verbose output:
+```bash
+pytest -v
+```
+
+Run with coverage report:
+```bash
+pytest --cov=app --cov-report=term-missing
+```
+
+Run specific test file:
+```bash
+pytest tests/test_routes.py
+```
+
+### What's Tested
+
+- **test_config.py**: Configuration management (SECRET_KEY, environment variables)
+- **test_app.py**: Flask application setup and configuration loading
+- **test_forms.py**: Form validation (LoginForm fields, required validators)
+- **test_routes.py**: Route handlers (`/`, `/index`, `/login`), HTTP responses, content verification
+
+All tests disable CSRF protection for easier testing and use Flask's test client for simulating HTTP requests.
