@@ -1,18 +1,1 @@
-* ImportError: (venv) fenix@anka4 ~/microblog_bits $ mkdir app
-(venv) fenix@anka4 ~/microblog_bits $ export FLASK_APP=microblog.py
-(venv) fenix@anka4 ~/microblog_bits $ flask run
-Usage: flask run [OPTIONS]
-Try 'flask run --help' for help.
-
-Error: While importing 'microblog', an ImportError was raised:
-
-Traceback (most recent call last):
-  File /home/fenix/microblog_bits/venv/lib/python3.13/site-packages/flask/cli.py, line 245, in locate_app
-    __import__(module_name)
-    ~~~~~~~~~~^^^^^^^^^^^^^
-  File /home/fenix/microblog_bits/microblog.py, line 1, in <module>
-    from app import app
-  File /home/fenix/microblog_bits/app/__init__.py, line 5, in <module>
-    from app import routes
-ImportError: cannot import name 'routes' from partially initialized module 'app' (most likely due to a circular import) (/home/fenix/microblog_bits/app/__init__.py)
-
+* Login not being processed 
