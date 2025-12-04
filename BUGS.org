@@ -1,1 +1,3 @@
-* Login not being processed 
+* DONE syntax error see /tmp/Screenshots/microblog-flask-syntax-error.png
+
+* DONE try submitting the form with the username or password fields empty, to see how the DataRequired validator halts the submission process ? no it does not...
