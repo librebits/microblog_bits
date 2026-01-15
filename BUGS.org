@@ -1,3 +1,13 @@
-* DONE syntax error see /tmp/Screenshots/microblog-flask-syntax-error.png
+#+TITLE: Microblog ~ Flask ~ Python
+#+AUTHOR: Fénix
+#+DATE: <2025-11-25>
+#+EMAIL: fenix@librebits.info
+#+FILETAGS: :proyecto:desarrollo:
 
-* DONE try submitting the form with the username or password fields empty, to see how the DataRequired validator halts the submission process ? no it does not...
+#+TODO: ACTIVE DOING | FIXED
+#+STARTUP: overview hidestars
+
+
+* FIXED syntax error see /tmp/Screenshots/microblog-flask-syntax-error.png
+
+* FIXED DONE try submitting the form with the username or password fields empty, to see how the DataRequired validator halts the submission process ? no it does not...

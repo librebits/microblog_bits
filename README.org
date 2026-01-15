@@ -1,32 +1,40 @@
-# Flask Mega Tutorial - Microblog 
+#+TITLE: Flask Mega Tutorial - Microblog 
+#+AUTHOR: Fénix
+#+DATE: <2025-11-25>   
+#+EMAIL: fenix@librebits.info
+#+FILETAGS: :proyecto:desarrollo:python:flask:
 
+#+TODO: TODO TESTING  | ERROR DONE DEPRECATED
+#+STARTUP: overview hidestars
+
+Ref: Miguel Grinberg Blog
 https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
 
 For your reference, here is the complete list of articles in this series:
 
--   [Chapter 1: Hello, World!](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) (this article)
--   [Chapter 2: Templates](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ii-templates)
--   [Chapter 3: Web Forms](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iii-web-forms)
--   [Chapter 4: Database](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database)
--   [Chapter 5: User Logins](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-v-user-logins)
--   [Chapter 6: Profile Page and Avatars](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vi-profile-page-and-avatars)
--   [Chapter 7: Error Handling](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vii-error-handling)
--   [Chapter 8: Followers](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-viii-followers)
--   [Chapter 9: Pagination](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ix-pagination)
--   [Chapter 10: Email Support](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-x-email-support)
--   [Chapter 11: Facelift](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xi-facelift)
--   [Chapter 12: Dates and Times](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xii-dates-and-times)
--   [Chapter 13: I18n and L10n](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xiii-i18n-and-l10n)
--   [Chapter 14: Ajax](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xiv-ajax)
--   [Chapter 15: A Better Application Structure](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xv-a-better-application-structure)
--   [Chapter 16: Full-Text Search](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xvi-full-text-search)
--   [Chapter 17: Deployment on Linux](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xvii-deployment-on-linux)
--   [Chapter 18: Deployment on Heroku](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xviii-deployment-on-heroku)
--   [Chapter 19: Deployment on Docker Containers](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xix-deployment-on-docker-containers)
--   [Chapter 20: Some JavaScript Magic](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xx-some-javascript-magic)
--   [Chapter 21: User Notifications](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xxi-user-notifications)
--   [Chapter 22: Background Jobs](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xxii-background-jobs)
--   [Chapter 23: Application Programming Interfaces (APIs)](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xxiii-application-programming-interfaces-apis)
+* DONE [Chapter 1: Hello, World!](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) (this article)
+* DONE [Chapter 2: Templates](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ii-templates)
+* DONE [Chapter 3: Web Forms](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iii-web-forms)
+* TESTING [Chapter 4: Database](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database)
+* [Chapter 5: User Logins](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-v-user-logins)
+* [Chapter 6: Profile Page and Avatars](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vi-profile-page-and-avatars)
+* [Chapter 7: Error Handling](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-vii-error-handling)
+* [Chapter 8: Followers](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-viii-followers)
+* [Chapter 9: Pagination](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-ix-pagination)
+* [Chapter 10: Email Support](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-x-email-support)
+* [Chapter 11: Facelift](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xi-facelift)
+* [Chapter 12: Dates and Times](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xii-dates-and-times)
+* [Chapter 13: I18n and L10n](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xiii-i18n-and-l10n)
+* [Chapter 14: Ajax](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xiv-ajax)
+* [Chapter 15: A Better Application Structure](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xv-a-better-application-structure)
+* [Chapter 16: Full-Text Search](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xvi-full-text-search)
+* [Chapter 17: Deployment on Linux](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xvii-deployment-on-linux)
+* [Chapter 18: Deployment on Heroku](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xviii-deployment-on-heroku)
+* [Chapter 19: Deployment on Docker Containers](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xix-deployment-on-docker-containers)
+* [Chapter 20: Some JavaScript Magic](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xx-some-javascript-magic)
+* [Chapter 21: User Notifications](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xxi-user-notifications)
+* [Chapter 22: Background Jobs](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xxii-background-jobs)
+* [Chapter 23: Application Programming Interfaces (APIs)](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xxiii-application-programming-interfaces-apis)
 
 
 
@@ -47,7 +55,7 @@ chapter you are about to read.
 The GitHub links for this chapter are: [Browse](https://github.com/miguelgrinberg/microblog/tree/v0.1), [Zip](https://github.com/miguelgrinberg/microblog/archive/v0.1.zip), [Diff](https://github.com/miguelgrinberg/microblog/compare/v0.0...v0.1).
 
 
-## Python Virtual Environments
+* Python Virtual Environments
 
 Support for virtual environments is included in all recent versions of Python, so all you need to do to create one is this:
 
@@ -110,10 +118,10 @@ it:
 
 If this statement does not give you any errors you can congratulate yourself, as Flask is installed and ready to be used.
 
-## Running Flask in Development Mode
+* Running Flask in Development Mode
 
-### Basic execution
-```bash
+** Basic execution
+#+begin_src bash session
 # Activate virtual environment
 source venv/bin/activate
 
@@ -121,27 +129,33 @@ source venv/bin/activate
 export FLASK_APP=microblog.py
 
 # Run Flask development server
-flask run
-```
+flask run --debug
+#+end_src
 
-### Debug mode (recommended for development)
+
+** Debug mode (recommended for development)
 
 Debug mode enables:
 - Auto-reload on code changes
 - Interactive debugger on errors
 - More detailed error messages
 
-```bash
+#+begin_src bash :session flask-dev :dir ~/microblog_bits
 # Activate virtual environment
 source venv/bin/activate
 
-# Run Flask with debug mode enabled
+# Set Flask application entry point (if .flaskenv is not configured)
+export FLASK_APP=microblog.py
+
+# Run Flask development server
 flask run --debug
-```
+#+end_src
+
+
 
 **Important**: When Flask runs without debug mode, code changes require manual server restart. Always use `--debug` flag during development for automatic reload.
 
-### Common issue: Empty page in browser
+** Common issue: Empty page in browser
 
 If you see an empty page when accessing http://127.0.0.1:5000, check:
 
@@ -149,11 +163,11 @@ If you see an empty page when accessing http://127.0.0.1:5000, check:
 2. **Debug mode enabled**: Run with `flask run --debug` to see changes immediately
 3. **Template exists**: Verify the template file exists in `app/templates/`
 
-## Testing
+* Testing
 
 This project includes comprehensive unit tests for all components using Python's `unittest` framework, compatible with `pytest`.
 
-### Test Structure
+** Test Structure
 
 ```
 tests/
@@ -164,7 +178,7 @@ tests/
 └── test_routes.py    # Tests for all routes
 ```
 
-### Running Tests
+** Running Tests
 
 Install test dependencies:
 ```bash
@@ -196,7 +210,7 @@ Run specific test file:
 pytest tests/test_routes.py
 ```
 
-### What's Tested
+** What's Tested
 
 - **test_config.py**: Configuration management (SECRET_KEY, environment variables)
 - **test_app.py**: Flask application setup and configuration loading
